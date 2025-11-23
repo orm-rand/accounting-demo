@@ -39,4 +39,4 @@ In `tests/test_scenarios.rs` there are two functional tests involving a sequence
    * withdrawal of 1 (tx 2)
    * deposit of 1 (tx 3)<br>
    In this case it is possible to dispute (tx 1). Changing this requires to analyze the full sequence of transactions after the disputed transaction and requires more time to implement.
- * thx tx-cache inside the AccountManager is never cleaned up, so large amounts of transactions will lead to memory issues, so transactions should be stored in a database.
+ * thx tx-cache inside the AccountManager is never cleaned up, so large amounts of transactions will lead to memory issues. It's probably worth storing transactions in a database.
