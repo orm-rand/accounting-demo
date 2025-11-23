@@ -1,0 +1,9 @@
+[package]
+name = "accounting-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+csv = "1.4.0"
+serde = { version = "1.0.219", features = ["derive"] }
+thiserror = "2.0.17"
