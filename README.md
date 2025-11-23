@@ -27,8 +27,8 @@ In `tests/test_scenarios.rs` there are two functional tests involving a sequence
    * disputed amount exceeds the available balance
    * transaction is not owned by client
    * transaction is already under dispute
-* `resolve`: resolves a dispute if the clients dispute is rejected (unlocks the disputed amount)
-* `chargeback`: resolves a dispute if the clients dispute is accepted and locks the account (unlocks and removes the disputed amount)
+* `resolve`: resolves a dispute if the clients dispute is rejected (unlocks the disputed amount, the transaction can be disputed again)
+* `chargeback`: resolves a dispute if the clients dispute is accepted and locks the account (unlocks and removes the disputed amount, the transaction can not be disputed again)
 
 ### Notes:
  * withdrawals can not be disputed, that may be worth adding
